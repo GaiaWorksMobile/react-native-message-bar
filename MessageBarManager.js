@@ -68,4 +68,12 @@ module.exports = {
 		}
 	},
 
+	isShowMessage() {
+		if (this._currentMessageBarAlert !== null) {
+			return this._currentMessageBarAlert.isMessageBarShown();
+		} else {
+			return false;
+		}
+	},
+
 };
