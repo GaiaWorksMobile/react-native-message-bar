@@ -396,7 +396,7 @@ class MessageBar extends Component {
   renderTitle() {
     if (this.state.title != null) {
       return (
-        <Text numberOfLines={this.state.titleNumberOfLines} style={this.state.titleStyle}>
+        <Text allowFontScaling={false} numberOfLines={this.state.titleNumberOfLines} style={this.state.titleStyle}>
           { this.state.title }
         </Text>
       );
@@ -406,7 +406,7 @@ class MessageBar extends Component {
   renderMessage() {
     if (this.state.message != null) {
       return (
-        <Text numberOfLines={this.state.messageNumberOfLines} style={this.state.messageStyle}>
+        <Text allowFontScaling={false} numberOfLines={this.state.messageNumberOfLines} style={this.state.messageStyle}>
           { this.state.message }
         </Text>
       );

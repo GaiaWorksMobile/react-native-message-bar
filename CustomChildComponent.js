@@ -41,12 +41,12 @@ class CustomChildComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
+        <Text allowFontScaling={false} style={styles.welcome}>
           This is a child component. Tap the button below to display its parent s alert message bar
         </Text>
 
         <TouchableOpacity style={styles.buttonContainer} onPress={this.showAlertMessage}>
-          <Text style={styles.button}>Show Alert from a Child Component</Text>
+          <Text allowFontScaling={false} style={styles.button}>Show Alert from a Child Component</Text>
         </TouchableOpacity>
 
       </View>
