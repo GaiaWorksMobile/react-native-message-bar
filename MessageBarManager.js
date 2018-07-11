@@ -61,6 +61,13 @@ module.exports = {
 		}, durationToHide);
 	},
 
+	showNull() {
+		if (this._currentMessageBarAlert === null) {
+			return;
+		}
+		this._currentMessageBarAlert.setNewState({});
+	},
+
 
 	hideAlert() {
 		if (this._currentMessageBarAlert !== null) {
